@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c3ljoxj4my5i"]
+[gd_scene load_steps=10 format=3 uid="uid://c3ljoxj4my5i"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_80qeh"]
 [ext_resource type="Texture2D" uid="uid://h4ajs24bjlrm" path="res://images/black background.png" id="2_426tx"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://QuitButton.gd" id="4_hivmo"]
 [ext_resource type="Texture2D" uid="uid://bvbapjgihnk7m" path="res://images/bar.png" id="5_fkab6"]
 [ext_resource type="Script" path="res://StartPressedBar.gd" id="6_cqovi"]
+[ext_resource type="AudioStream" uid="uid://de3pktd1itmc4" path="res://sounds/Main theme.mp3" id="8_ohd82"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_3k8d3"]
 
@@ -137,6 +138,12 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_xwdgq")
 theme_override_font_sizes/font_size = 120
 text = "Black Out"
+
+[node name="PlayMenuTheme" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_ohd82")
+volume_db = -10.306
+autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="StartMenu/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="StartMenu/OptionsButton" to="." method="_on_options_button_pressed"]

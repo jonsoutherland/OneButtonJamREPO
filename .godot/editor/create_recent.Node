@@ -1,6 +1,10 @@
-TextureProgressBar
-Button
-VBoxContainer
-Label
 TextureRect
+VBoxContainer
+Button
+TextureProgressBar
+Label
+HBoxContainer
+CheckButton
+OptionButton
+AudioStreamPlayer2D
 Sprite2D

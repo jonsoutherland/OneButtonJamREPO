@@ -1,9 +1,6 @@
-res://credits.tscn
-res://go_back.gd
 res://menu.tscn
-res://e.tscn
-res://options.tscn
-res://back_to_main.gd
-res://credits.gd
-res://ReturnBox.gd
+res://credits.tscn
 res://menu.gd
+res://options.tscn
+res://options.gd
+res://default_bus_layout.tres

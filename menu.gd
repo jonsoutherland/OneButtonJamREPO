@@ -6,6 +6,7 @@ var requierd_hold_time = 1 # set this number to change how long the user needs t
  
 # called when the node enters the scene tree for the first time.
 func _ready():
+	# opens the game in full screen
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
 	# these append the menu button options into the menu_items array
 	menu_items.append($StartMenu/StartButton)
@@ -14,7 +15,7 @@ func _ready():
 	menu_items.append($StartMenu/QuitButton)
 	
 	
-	# sets the focus to the first item (start button)
+	# sets the focus to the first item (start button   )
 	menu_items[0].grab_focus() # grab focus allows us to select shit with keys
 
 

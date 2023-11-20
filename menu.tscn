@@ -1,0 +1,105 @@
+[gd_scene load_steps=7 format=3 uid="uid://c3ljoxj4my5i"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_80qeh"]
+[ext_resource type="FontFile" uid="uid://ciynf0kgqo7w" path="res://fonts/PixeloidSans-mLxMm.ttf" id="2_xwdgq"]
+[ext_resource type="Script" path="res://StartMenu.gd" id="3_h3uet"]
+[ext_resource type="Texture2D" uid="uid://dk4j81yx7dp6a" path="res://images/bateman.jpg" id="3_ts3ar"]
+[ext_resource type="Script" path="res://QuitButton.gd" id="4_hivmo"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_3k8d3"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+focus_mode = 2
+script = ExtResource("1_80qeh")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0694444
+anchor_top = -0.0131173
+anchor_right = 1.06944
+anchor_bottom = 1.01312
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ts3ar")
+expand_mode = 5
+
+[node name="StartMenu" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -95.0
+offset_top = -143.0
+offset_right = 95.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("3_h3uet")
+
+[node name="StartButton" type="Button" parent="StartMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_xwdgq")
+theme_override_font_sizes/font_size = 30
+text = "Start Game"
+icon = SubResource("ViewportTexture_3k8d3")
+
+[node name="OptionsButton" type="Button" parent="StartMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_xwdgq")
+theme_override_font_sizes/font_size = 30
+text = "Options"
+
+[node name="Credits" type="Button" parent="StartMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_xwdgq")
+theme_override_font_sizes/font_size = 30
+text = "Credits
+"
+
+[node name="QuitButton" type="Button" parent="StartMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_xwdgq")
+theme_override_font_sizes/font_size = 30
+text = "Quit Game"
+script = ExtResource("4_hivmo")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -279.0
+offset_top = -84.0
+offset_right = 279.0
+offset_bottom = 84.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_xwdgq")
+theme_override_font_sizes/font_size = 120
+text = "Black Out"
+
+[connection signal="pressed" from="StartMenu/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="StartMenu/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="StartMenu/Credits" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="StartMenu/QuitButton" to="." method="_on_quit_button_pressed"]

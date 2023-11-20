@@ -13,6 +13,7 @@ func _ready():
 	menu_items.append($StartMenu/Credits)
 	menu_items.append($StartMenu/QuitButton)
 	
+	
 	# sets the focus to the first item (start button)
 	menu_items[0].grab_focus() # grab focus allows us to select shit with keys
 

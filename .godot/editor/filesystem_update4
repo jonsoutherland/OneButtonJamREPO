@@ -1,5 +1,8 @@
+res://credits.tscn
+res://go_back.gd
 res://menu.tscn
 res://e.tscn
-res://credits.tscn
 res://options.tscn
-res://menu.gd
+res://back_to_main.gd
+res://credits.gd
+res://ReturnBox.gd

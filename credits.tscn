@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://d31eu48yjfg8g"]
+[gd_scene load_steps=7 format=3 uid="uid://d31eu48yjfg8g"]
 
-[ext_resource type="Texture2D" uid="uid://b1w5rtmbbn63a" path="res://OneButtonGameJam/images/credits.jpg" id="1_by3uq"]
+[ext_resource type="Script" path="res://credits.gd" id="1_7oi78"]
+[ext_resource type="Texture2D" uid="uid://h4ajs24bjlrm" path="res://images/black background.png" id="1_megvr"]
+[ext_resource type="FontFile" uid="uid://ciynf0kgqo7w" path="res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf" id="2_1ay71"]
+[ext_resource type="FontFile" uid="uid://ciynf0kgqo7w" path="res://fonts/PixeloidSans-mLxMm.ttf" id="3_m25qs"]
+[ext_resource type="Script" path="res://ReturnBox.gd" id="4_2xmww"]
+[ext_resource type="Texture2D" uid="uid://bvbapjgihnk7m" path="res://images/bar.png" id="6_uux62"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -9,6 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_7oi78")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -21,5 +27,62 @@ offset_right = 13.0
 offset_bottom = -2.47998
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_by3uq")
+texture = ExtResource("1_megvr")
 expand_mode = 5
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 35.0
+offset_top = 1.0
+offset_right = 784.0
+offset_bottom = 102.0
+theme_override_fonts/font = ExtResource("2_1ay71")
+theme_override_font_sizes/font_size = 80
+text = "CREDITS"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 112.0
+offset_right = 793.0
+offset_bottom = 320.0
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1ay71")
+theme_override_font_sizes/font_size = 40
+text = "UI Programming: Jon Southerland
+Game Programming: Gabe Vasquez
+Art: 
+Music: Jon Southerland"
+
+[node name="ReturnBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -149.5
+offset_top = -149.0
+offset_right = 149.5
+offset_bottom = -92.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("4_2xmww")
+
+[node name="Button" type="Button" parent="ReturnBox"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_m25qs")
+theme_override_font_sizes/font_size = 40
+text = "Back to Menu"
+
+[node name="ButtonHeld" type="TextureProgressBar" parent="ReturnBox/Button"]
+layout_mode = 2
+offset_top = 61.0
+offset_right = 299.0
+offset_bottom = 261.0
+scale = Vector2(1.5, -0.041)
+texture_progress = ExtResource("6_uux62")
+
+[connection signal="pressed" from="ReturnBox/Button" to="." method="_on_button_pressed"]

@@ -1,6 +1,6 @@
 TextureProgressBar
-TextureRect
-Label
-VBoxContainer
 Button
+VBoxContainer
+Label
+TextureRect
 Sprite2D

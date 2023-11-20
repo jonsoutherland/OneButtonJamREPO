@@ -1,22 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700502740
-credits.tscn::PackedScene::9178503653657309560::1700502710::0::1::::<><>::uid://b1w5rtmbbn63a::::res://OneButtonGameJam/images/credits.jpg
+::res://::1700504341
+back_to_main.gd::GDScript::-1::1700503609::0::1::::<>Button<>::
+credits.tscn::PackedScene::9178503653657309560::1700504309::0::1::::<><>::uid://h4ajs24bjlrm::::res://images/black background.png<>uid://ciynf0kgqo7w::::res://fonts/PixeloidSans-mLxMm.ttf<>res://back_to_main.gd
 e.gd::GDScript::-1::1700442425::0::1::::<>Node2D<>::
-e.tscn::PackedScene::2821158308076672257::1700502710::0::1::::<><>::res://go_back.gd
-go_back.gd::GDScript::-1::1700445375::0::1::::<>Button<>::
+e.tscn::PackedScene::2821158308076672257::1700504044::0::1::::<><>::res://go_back.gd
+go_back.gd::GDScript::-1::1700504307::0::1::::<>Button<>::
 icon.svg::CompressedTexture2D::3153496883792712875::1700441678::1700441685::1::::<><>::
 image.tscn::PackedScene::9202707719761628160::1700442959::0::1::::<><>::res://w.gd
-menu.gd::GDScript::-1::1700502651::0::1::::<>Control<>::
-menu.tscn::PackedScene::198864994760890228::1700502740::0::1::::<><>::res://menu.gd<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>res://StartMenu.gd<>uid://dk4j81yx7dp6a::::res://OneButtonGameJam/images/bateman.jpg<>res://QuitButton.gd<>uid://bvbapjgihnk7m::::res://images/bar.png<>res://StartPressedBar.gd
+menu.gd::GDScript::-1::1700504156::0::1::::<>Control<>::
+menu.tscn::PackedScene::198864994760890228::1700504187::0::1::::<><>::res://menu.gd<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>res://StartMenu.gd<>res://QuitButton.gd<>uid://bvbapjgihnk7m::::res://images/bar.png<>res://StartPressedBar.gd
 node_2d.tscn::PackedScene::7075656575281000800::1700442425::0::1::::<><>::res://e.gd
-options.tscn::PackedScene::3561240177327490349::1700502710::0::1::::<><>::
+options.tscn::PackedScene::3561240177327490349::1700504044::0::1::::<><>::
 QuitButton.gd::GDScript::-1::1700447970::0::1::::<>Button<>::
 StartMenu.gd::GDScript::-1::1700450983::0::1::::<>VBoxContainer<>::
 StartPressedBar.gd::GDScript::-1::1700495491::0::1::::<>TextureProgressBar<>::
 w.gd::GDScript::-1::1700442942::0::1::::<>Node2D<>::
 ::res://fonts/::1700444273
 PixeloidSans-mLxMm.ttf::FontFile::158373434155581294::1700444139::1700444273::1::::<><>::
-::res://images/::1700502770
+::res://images/::1700502777
 bar.png::CompressedTexture2D::3862478047106753484::1700495222::1700495226::1::::<><>::
 bateman.jpg::CompressedTexture2D::7921624230231443794::1700444461::1700444510::1::::<><>::
 black background.png::CompressedTexture2D::551205920928456754::1700502770::1700502777::1::::<><>::

@@ -1,10 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://c3ljoxj4my5i"]
+[gd_scene load_steps=9 format=3 uid="uid://c3ljoxj4my5i"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_80qeh"]
-[ext_resource type="FontFile" uid="uid://ciynf0kgqo7w" path="res://fonts/PixeloidSans-mLxMm.ttf" id="2_xwdgq"]
+[ext_resource type="FontFile" uid="uid://ciynf0kgqo7w" path="res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf" id="2_xwdgq"]
 [ext_resource type="Script" path="res://StartMenu.gd" id="3_h3uet"]
-[ext_resource type="Texture2D" uid="uid://dk4j81yx7dp6a" path="res://images/bateman.jpg" id="3_ts3ar"]
+[ext_resource type="Texture2D" uid="uid://dk4j81yx7dp6a" path="res://OneButtonGameJam/images/bateman.jpg" id="3_ts3ar"]
 [ext_resource type="Script" path="res://QuitButton.gd" id="4_hivmo"]
+[ext_resource type="Texture2D" uid="uid://bvbapjgihnk7m" path="res://images/bar.png" id="5_fkab6"]
+[ext_resource type="Script" path="res://StartPressedBar.gd" id="6_cqovi"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_3k8d3"]
 
@@ -58,12 +60,30 @@ theme_override_font_sizes/font_size = 30
 text = "Start Game"
 icon = SubResource("ViewportTexture_3k8d3")
 
+[node name="StartPressedBar" type="TextureProgressBar" parent="StartMenu/StartButton"]
+layout_mode = 0
+offset_top = 39.0
+offset_right = 200.0
+offset_bottom = 239.0
+scale = Vector2(0.949458, 0.0247201)
+texture_progress = ExtResource("5_fkab6")
+script = ExtResource("6_cqovi")
+
 [node name="OptionsButton" type="Button" parent="StartMenu"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("2_xwdgq")
 theme_override_font_sizes/font_size = 30
 text = "Options"
+
+[node name="OptionsPressedBar" type="TextureProgressBar" parent="StartMenu/OptionsButton"]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 200.0
+offset_bottom = 240.0
+scale = Vector2(0.633, 0.025)
+texture_progress = ExtResource("5_fkab6")
+script = ExtResource("6_cqovi")
 
 [node name="Credits" type="Button" parent="StartMenu"]
 layout_mode = 2
@@ -73,6 +93,15 @@ theme_override_font_sizes/font_size = 30
 text = "Credits
 "
 
+[node name="CreditsPressedBar" type="TextureProgressBar" parent="StartMenu/Credits"]
+layout_mode = 0
+offset_top = 39.0
+offset_right = 200.0
+offset_bottom = 239.0
+scale = Vector2(0.633, 0.025)
+texture_progress = ExtResource("5_fkab6")
+script = ExtResource("6_cqovi")
+
 [node name="QuitButton" type="Button" parent="StartMenu"]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -81,6 +110,15 @@ theme_override_fonts/font = ExtResource("2_xwdgq")
 theme_override_font_sizes/font_size = 30
 text = "Quit Game"
 script = ExtResource("4_hivmo")
+
+[node name="QuitPressedBar" type="TextureProgressBar" parent="StartMenu/QuitButton"]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 200.0
+offset_bottom = 240.0
+scale = Vector2(0.825, 0.026)
+texture_progress = ExtResource("5_fkab6")
+script = ExtResource("6_cqovi")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1

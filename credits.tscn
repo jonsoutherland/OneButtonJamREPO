@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d31eu48yjfg8g"]
 
-[ext_resource type="Texture2D" uid="uid://b1w5rtmbbn63a" path="res://images/credits.jpg" id="1_by3uq"]
+[ext_resource type="Texture2D" uid="uid://b1w5rtmbbn63a" path="res://OneButtonGameJam/images/credits.jpg" id="1_by3uq"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3

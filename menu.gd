@@ -4,9 +4,9 @@ var index = 0 # creates index variable for above array
 var time_held = 0 # records how long the space key is held down
 var requierd_hold_time = 1 # set this number to change how long the user needs to hold the input
 
-
 # called when the node enters the scene tree for the first time.
 func _ready():
+	
 	# these append the menu button options into the menu_items array
 	menu_items.append($StartMenu/StartButton)
 	menu_items.append($StartMenu/OptionsButton)
@@ -33,6 +33,12 @@ func _process(delta):
 		time_held += delta
 	else:
 		time_held = 0
+		_resetProgressBars()
+	
+	_progressBar()
+	
+	
+	# if the spacebar was held down for the required hold time, then load the selected button
 	if time_held > requierd_hold_time:
 		_loadMenu(index)
 
@@ -46,6 +52,32 @@ func _loadMenu(menu_index):
 		get_tree().change_scene_to_file("res://credits.tscn")
 	elif menu_index == 3:
 		get_tree().quit()
+		
 
+# theres a better way to do this but i cant be fucked
+func _progressBar():
+	var bar_to_update
+	var start_progress_bar = $StartMenu/StartButton/StartPressedBar
+	var options_progress_bar = $StartMenu/OptionsButton/OptionsPressedBar
+	var credits_progress_bar = $StartMenu/Credits/CreditsPressedBar
+	var quit_progress_bar = $StartMenu/QuitButton/QuitPressedBar
+	
+	if index == 0: 
+		bar_to_update = start_progress_bar
+	elif index == 1:
+		bar_to_update = options_progress_bar
+		
+	elif index == 2:
+		bar_to_update = credits_progress_bar
+	elif index == 3:
+		bar_to_update = quit_progress_bar
+		
+	bar_to_update.value = time_held * 100
+
+func _resetProgressBars():
+	$StartMenu/StartButton/StartPressedBar.value = 0
+	$StartMenu/OptionsButton/OptionsPressedBar.value = 0
+	$StartMenu/Credits/CreditsPressedBar.value = 0
+	$StartMenu/QuitButton/QuitPressedBar.value = 0
 
 

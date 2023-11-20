@@ -1,5 +1,6 @@
 res://menu.tscn
 res://e.tscn
 res://credits.tscn
-res://menu.gd
 res://options.tscn
+res://menu.gd
+res://StartPressedBar.gd

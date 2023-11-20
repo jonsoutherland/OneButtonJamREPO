@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://c3ljoxj4my5i"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_80qeh"]
+[ext_resource type="Texture2D" uid="uid://h4ajs24bjlrm" path="res://images/black background.png" id="2_426tx"]
 [ext_resource type="FontFile" uid="uid://ciynf0kgqo7w" path="res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf" id="2_xwdgq"]
 [ext_resource type="Script" path="res://StartMenu.gd" id="3_h3uet"]
-[ext_resource type="Texture2D" uid="uid://dk4j81yx7dp6a" path="res://OneButtonGameJam/images/bateman.jpg" id="3_ts3ar"]
 [ext_resource type="Script" path="res://QuitButton.gd" id="4_hivmo"]
 [ext_resource type="Texture2D" uid="uid://bvbapjgihnk7m" path="res://images/bar.png" id="5_fkab6"]
 [ext_resource type="Script" path="res://StartPressedBar.gd" id="6_cqovi"]
@@ -35,7 +35,7 @@ anchor_right = 1.06944
 anchor_bottom = 1.01312
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_ts3ar")
+texture = ExtResource("2_426tx")
 expand_mode = 5
 
 [node name="StartMenu" type="VBoxContainer" parent="."]

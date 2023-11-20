@@ -37,7 +37,6 @@ func _process(delta):
 	
 	_progressBar()
 	
-	
 	# if the spacebar was held down for the required hold time, then load the selected button
 	if time_held > requierd_hold_time:
 		_loadMenu(index)
@@ -62,7 +61,7 @@ func _progressBar():
 	var credits_progress_bar = $StartMenu/Credits/CreditsPressedBar
 	var quit_progress_bar = $StartMenu/QuitButton/QuitPressedBar
 	
-	if index == 0: 
+	if index == 0:
 		bar_to_update = start_progress_bar
 	elif index == 1:
 		bar_to_update = options_progress_bar
@@ -74,6 +73,7 @@ func _progressBar():
 		
 	bar_to_update.value = time_held * 100
 
+# i have to do this bullshit i cannot figure out how to not do it
 func _resetProgressBars():
 	$StartMenu/StartButton/StartPressedBar.value = 0
 	$StartMenu/OptionsButton/OptionsPressedBar.value = 0

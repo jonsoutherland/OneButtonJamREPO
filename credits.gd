@@ -16,7 +16,7 @@ func _process(delta):
 		time_held = 0
 		
 	$ReturnBox/Button/ButtonHeld.value = time_held * 100
-	
+
 	if time_held > required_hold_time:
 		get_tree().change_scene_to_file("res://menu.tscn")
 

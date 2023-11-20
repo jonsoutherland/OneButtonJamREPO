@@ -3,10 +3,10 @@ var menu_items = [] # creates an empty array for the menu items
 var index = 0 # creates index variable for above array
 var time_held = 0 # records how long the space key is held down
 var requierd_hold_time = 1 # set this number to change how long the user needs to hold the input
-
+ 
 # called when the node enters the scene tree for the first time.
 func _ready():
-	
+	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
 	# these append the menu button options into the menu_items array
 	menu_items.append($StartMenu/StartButton)
 	menu_items.append($StartMenu/OptionsButton)

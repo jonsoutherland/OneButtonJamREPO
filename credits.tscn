@@ -53,7 +53,8 @@ theme_override_font_sizes/font_size = 40
 text = "UI Programming: Jon Southerland
 Game Programming: Gabe Vasquez
 Art: 
-Music: Jon Southerland"
+Music: Jon Southerland
+Sound Design: Jon Southerland"
 
 [node name="ReturnBox" type="VBoxContainer" parent="."]
 layout_mode = 1

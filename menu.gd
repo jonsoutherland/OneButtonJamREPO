@@ -6,8 +6,8 @@ var requierd_hold_time = 1 # set this number to change how long the user needs t
  
 # called when the node enters the scene tree for the first time.
 func _ready():
-	# opens the game in full screen
-	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
+	MusicController.play_music()
+	# opens the game in full screen 
 	# these append the menu button options into the menu_items array
 	menu_items.append($StartMenu/StartButton)
 	menu_items.append($StartMenu/OptionsButton)
@@ -24,6 +24,7 @@ func _process(delta):
 	
 	# this conditonal loops through the array of menu buttons
 	if Input.is_action_just_released("Iterate"):
+		$MenuSelect.play() # plays a little sound when you iterate through the menu
 		if index < menu_items.size() - 1:
 			index += 1
 		else:
@@ -56,7 +57,7 @@ func _loadMenu(menu_index):
 		
 
 # theres a better way to do this but i cant be fucked
-func _progressBar():
+func _progressBar(): 
 	var bar_to_update
 	var start_progress_bar = $StartMenu/StartButton/StartPressedBar
 	var options_progress_bar = $StartMenu/OptionsButton/OptionsPressedBar

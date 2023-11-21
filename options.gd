@@ -1,17 +1,14 @@
 extends Control
 var music_enabled = !(AudioServer.is_bus_mute(AudioServer.get_bus_index("Music")))
+var is_fullscreen = DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN
 var settings = []
 var index = 0
 var time_held = 0
 var requierd_hold_time = 1
  
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	if music_enabled:
-		$Settings/MusicEnabled.text = "Music: Enabled"
-	else:
-		$Settings/MusicEnabled.text = "Music: Disabled"
-	
+func _ready(): 
+	_setUp()
 	
 	settings.append($Settings/MusicEnabled)
 	settings.append($Settings/FullscreenEnabled)
@@ -22,7 +19,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
 	if Input.is_action_just_released("Iterate"):
 		if index < settings.size() - 1:
 			index += 1
@@ -72,11 +68,29 @@ func _updateSetting():
 			$Settings/MusicEnabled.text = "Music: Disabled"
 			AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), true)     
 	if index == 1:
-		pass
+		is_fullscreen = !is_fullscreen  
+		if is_fullscreen:
+			$Settings/FullscreenEnabled.text = "Fullscreen: Enabled"
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
+		else:
+			$Settings/FullscreenEnabled.text = "Fullscreen: Disabled"
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 	if index == 2:
-		get_tree().change_scene_to_file("res://menu.tscn")
+		get_tree().change_scene_to_file("res://menu.tscn") 
 		
 	
 	
 	
 	time_held = 0
+	
+func _setUp():
+	if music_enabled:
+		$Settings/MusicEnabled.text = "Music: Enabled"
+	else:
+		$Settings/MusicEnabled.text = "Music: Disabled"
+	
+	if is_fullscreen:
+		$Settings/FullscreenEnabled.text = "Fullscreen: Enabled"
+	else:
+		$Settings/FullscreenEnabled.text = "Fullscreen: Disabled"
+		

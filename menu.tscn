@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bvbapjgihnk7m" path="res://images/bar.png" id="5_fkab6"]
 [ext_resource type="Script" path="res://StartPressedBar.gd" id="6_cqovi"]
 [ext_resource type="AudioStream" uid="uid://b13cnhx4sqnjn" path="res://sounds/menu select.mp3" id="8_5oi1a"]
-[ext_resource type="FontFile" uid="uid://ciynf0kgqo7w" path="res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf" id="9_roldp"]
+[ext_resource type="FontFile" uid="uid://ciynf0kgqo7w" path="res://fonts/PixeloidSans-mLxMm.ttf" id="9_roldp"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_3k8d3"]
 

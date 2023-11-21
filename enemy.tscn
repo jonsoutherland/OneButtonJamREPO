@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2iynwbeheeh4"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_fdl6o"]
+[ext_resource type="Texture2D" uid="uid://tnqcqrgue0ei" path="res://images/1666527582_cdGIxNo9cli-XSX54y-pA-qFJkjNTN5b11sC3vHHflvuzCct8tgnPq6IWQmmTGFUO71r-14hbCRSM62YnR05Behc.jpg" id="2_dgnmw"]
+[ext_resource type="Script" path="res://enemySprite.gd" id="3_qbnjn"]
+
+[sub_resource type="Curve2D" id="Curve2D_e85br"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -782.565, 20.315, 0, 0, 0, 0, 1508.98, 16.7717)
+}
+point_count = 2
+
+[node name="enemy" type="Node2D"]
+position = Vector2(-105, 424)
+script = ExtResource("1_fdl6o")
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(322, -84)
+scale = Vector2(0.28496, 4.23333)
+curve = SubResource("Curve2D_e85br")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(-782.565, 20.315)
+rotation = -0.00154625
+loop = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D"]
+position = Vector2(3.50928, -0.104614)
+rotation = 0.00154625
+scale = Vector2(1.33848, 0.0859752)
+texture = ExtResource("2_dgnmw")
+script = ExtResource("3_qbnjn")
+metadata/_edit_lock_ = true

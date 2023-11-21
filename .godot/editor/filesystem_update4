@@ -1,5 +1,14 @@
-res://credits.tscn
-res://options.tscn
+res://Scenes/menu.tscn
+res://Scenes/options.tscn
+res://Scenes/MusicController.tscn
+res://Scenes/credits.tscn
+res://Scenes/e.tscn
 res://menu.tscn
+res://StartMenu.gd
+res://options.tscn
 res://MusicController.tscn
+res://credits.tscn
 res://e.tscn
+res://enemy.gd
+res://enemy.tscn
+res://enemySprite.gd

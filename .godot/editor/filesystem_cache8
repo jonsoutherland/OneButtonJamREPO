@@ -1,23 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700524727
+::res://::1700525433
 back_to_main.gd::GDScript::-1::1700504579::0::1::::<>Button<>::
 credits.gd::GDScript::-1::1700506110::0::1::::<>Control<>::
-credits.tscn::PackedScene::9178503653657309560::1700513318::0::1::::<><>::res://credits.gd<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>res://ReturnBox.gd<>uid://bvbapjgihnk7m::::res://images/bar.png
+credits.tscn::PackedScene::9178503653657309560::1700525357::0::1::::<><>::res://credits.gd<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>res://ReturnBox.gd<>uid://bvbapjgihnk7m::::res://images/bar.png
 default_bus_layout.tres::AudioBusLayout::5470459012083189054::1700524727::0::1::::<><>::
 e.gd::GDScript::-1::1700442425::0::1::::<>Node2D<>::
 e.tscn::PackedScene::2821158308076672257::1700504401::0::1::::<><>::res://go_back.gd
-go_back.gd::GDScript::-1::1700504808::0::1::::<>Button<>::
+go_back.gd::GDScript::-1::1700524950::0::1::::<>Button<>::
 icon.svg::CompressedTexture2D::3153496883792712875::1700441678::1700441685::1::::<><>::
 image.tscn::PackedScene::9202707719761628160::1700442959::0::1::::<><>::res://w.gd
-menu.gd::GDScript::-1::1700524206::0::1::::<>Control<>::
-menu.tscn::PackedScene::198864994760890228::1700524314::0::1::::<><>::res://menu.gd<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>res://StartMenu.gd<>res://QuitButton.gd<>uid://bvbapjgihnk7m::::res://images/bar.png<>res://StartPressedBar.gd
-node_2d.tscn::PackedScene::7075656575281000800::1700442425::0::1::::<><>::res://e.gd
-options.gd::GDScript::-1::1700521081::0::1::::<>Control<>::
-options.tscn::PackedScene::3561240177327490349::1700524275::0::1::::<><>::res://options.gd<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://bvbapjgihnk7m::::res://images/bar.png
-QuitButton.gd::GDScript::-1::1700447970::0::1::::<>Button<>::
+menu.gd::GDScript::-1::1700524838::0::1::::<>Control<>::
+menu.tscn::PackedScene::198864994760890228::1700525093::0::1::::<><>::res://menu.gd<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>res://StartMenu.gd<>res://QuitButton.gd<>uid://bvbapjgihnk7m::::res://images/bar.png<>res://StartPressedBar.gd<>uid://b13cnhx4sqnjn::::res://sounds/menu select.mp3
 Music.gd::GDScript::-1::1700523831::0::1::::<>AudioStreamPlayer<>::
-MusicController.tscn::PackedScene::3601918911422829192::1700524305::0::1::::<><>::res://MusicController.gd
 MusicController.gd::GDScript::-1::1700524093::0::1::::<>Node<>::
+MusicController.tscn::PackedScene::3601918911422829192::1700525093::0::1::::<><>::res://MusicController.gd
+node_2d.tscn::PackedScene::7075656575281000800::1700442425::0::1::::<><>::res://e.gd
+options.gd::GDScript::-1::1700524850::0::1::::<>Control<>::
+options.tscn::PackedScene::3561240177327490349::1700525093::0::1::::<><>::res://options.gd<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://bvbapjgihnk7m::::res://images/bar.png
+QuitButton.gd::GDScript::-1::1700447970::0::1::::<>Button<>::
 ReturnBox.gd::GDScript::-1::1700504956::0::1::::<>VBoxContainer<>::
 StartMenu.gd::GDScript::-1::1700450983::0::1::::<>VBoxContainer<>::
 StartPressedBar.gd::GDScript::-1::1700495491::0::1::::<>TextureProgressBar<>::
@@ -35,7 +35,7 @@ PixeloidSans-mLxMm.ttf::FontFile::158373434155581294::1700444139::1700467937::1:
 ::res://OneButtonGameJam/images/::1700467937
 bateman.jpg::CompressedTexture2D::7921624230231443794::1700444461::1700467937::1::::<><>::
 credits.jpg::CompressedTexture2D::4258599813679260492::1700447486::1700467937::1::::<><>::
-::res://sounds/::1700524770
+::res://sounds/::1700524772
 Burp.wav::AudioStreamWAV::268669066716374931::1700509218::1700509912::1::::<><>::
 Main theme.mp3::AudioStreamMP3::7498749619346490793::1700522872::1700523363::1::::<><>::
 menu select.mp3::AudioStreamMP3::4269278249238191475::1700524678::1700524772::1::::<><>::

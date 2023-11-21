@@ -1,10 +1,5 @@
 res://menu.tscn
 res://options.tscn
-res://menu.gd
-res://Music.gd
 res://MusicController.tscn
-res://MusicController.gd
-res://default_bus_layout.tres
-res://options.gd
-res://go_back.gd
 res://credits.tscn
+res://options.gd

@@ -3,7 +3,7 @@ var menu_items = [] # creates an empty array for the menu items
 var index = 0 # creates index variable for above array
 var time_held = 0 # records how long the space key is held down
 var requierd_hold_time = 1 # set this number to change how long the user needs to hold the input
- 
+
 # called when the node enters the scene tree for the first time.
 func _ready():
 	MusicController.play_music()
@@ -21,7 +21,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
 	# this conditonal loops through the array of menu buttons
 	if Input.is_action_just_released("Iterate"):
 		$MenuSelect.play() # plays a little sound when you iterate through the menu

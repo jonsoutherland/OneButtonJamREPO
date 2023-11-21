@@ -1,7 +1,7 @@
+Node
 Label
 VBoxContainer
 AudioStreamPlayer
-Node
 TextureRect
 Button
 TextureProgressBar

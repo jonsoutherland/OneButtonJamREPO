@@ -1,22 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700530562
+::res://::1700539882
 back_to_main.gd::GDScript::-1::1700504579::0::1::::<>Button<>::
 credits.gd::GDScript::-1::1700506110::0::1::::<>Control<>::
-credits.tscn::PackedScene::9178503653657309560::1700526175::0::1::::<><>::res://credits.gd<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>res://ReturnBox.gd<>uid://bvbapjgihnk7m::::res://images/bar.png
+credits.tscn::PackedScene::9178503653657309560::1700538743::0::1::::<><>::res://credits.gd<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>res://ReturnBox.gd<>uid://bvbapjgihnk7m::::res://images/bar.png
 default_bus_layout.tres::AudioBusLayout::5470459012083189054::1700524727::0::1::::<><>::
 e.gd::GDScript::-1::1700442425::0::1::::<>Node2D<>::
 e.tscn::PackedScene::2821158308076672257::1700504401::0::1::::<><>::res://go_back.gd
 go_back.gd::GDScript::-1::1700524950::0::1::::<>Button<>::
 icon.svg::CompressedTexture2D::3153496883792712875::1700441678::1700441685::1::::<><>::
 image.tscn::PackedScene::9202707719761628160::1700442959::0::1::::<><>::res://w.gd
-menu.gd::GDScript::-1::1700524838::0::1::::<>Control<>::
-menu.tscn::PackedScene::198864994760890228::1700526231::0::1::::<><>::res://menu.gd<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>res://StartMenu.gd<>res://QuitButton.gd<>uid://bvbapjgihnk7m::::res://images/bar.png<>res://StartPressedBar.gd<>uid://b13cnhx4sqnjn::::res://sounds/menu select.mp3
+menu.gd::GDScript::-1::1700532146::0::1::::<>Control<>::
+menu.tscn::PackedScene::198864994760890228::1700538700::0::1::::<><>::res://menu.gd<>uid://h4ajs24bjlrm::::res://images/black background.png<>res://StartMenu.gd<>res://QuitButton.gd<>uid://bvbapjgihnk7m::::res://images/bar.png<>res://StartPressedBar.gd<>uid://b13cnhx4sqnjn::::res://sounds/menu select.mp3<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf
 Music.gd::GDScript::-1::1700523831::0::1::::<>AudioStreamPlayer<>::
 MusicController.gd::GDScript::-1::1700524093::0::1::::<>Node<>::
-MusicController.tscn::PackedScene::3601918911422829192::1700526175::0::1::::<><>::res://MusicController.gd
+MusicController.tscn::PackedScene::3601918911422829192::1700538700::0::1::::<><>::res://MusicController.gd
 node_2d.tscn::PackedScene::7075656575281000800::1700442425::0::1::::<><>::res://e.gd
-options.gd::GDScript::-1::1700525495::0::1::::<>Control<>::
-options.tscn::PackedScene::3561240177327490349::1700526175::0::1::::<><>::res://options.gd<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://bvbapjgihnk7m::::res://images/bar.png<>uid://b13cnhx4sqnjn::::res://sounds/menu select.mp3
+options.gd::GDScript::-1::1700531182::0::1::::<>Control<>::
+options.tscn::PackedScene::3561240177327490349::1700538700::0::1::::<><>::res://options.gd<>uid://ciynf0kgqo7w::::res://OneButtonGameJam/fonts/PixeloidSans-mLxMm.ttf<>uid://h4ajs24bjlrm::::res://images/black background.png<>uid://bvbapjgihnk7m::::res://images/bar.png<>uid://b13cnhx4sqnjn::::res://sounds/menu select.mp3
 QuitButton.gd::GDScript::-1::1700447970::0::1::::<>Button<>::
 ReturnBox.gd::GDScript::-1::1700504956::0::1::::<>VBoxContainer<>::
 StartMenu.gd::GDScript::-1::1700450983::0::1::::<>VBoxContainer<>::

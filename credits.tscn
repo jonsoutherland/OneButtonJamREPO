@@ -50,11 +50,11 @@ offset_bottom = 320.0
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_m25qs")
 theme_override_font_sizes/font_size = 40
-text = "UI Programming: Jon Southerland
+text = "UI Programming: Jon \"Ploobus\" Southerland
 Game Programming: Gabe Vasquez
 Art: 
-Music: Jon Southerland
-Sound Design: Jon Southerland"
+Music: Jon \"Ploobus\" Southerland
+Sound Design: Jon \"Ploobus\" Southerland"
 
 [node name="ReturnBox" type="VBoxContainer" parent="."]
 layout_mode = 1

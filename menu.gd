@@ -46,7 +46,7 @@ func _process(delta):
 # a function to load the selected menu item's scene
 func _loadMenu(menu_index):
 	if menu_index == 0:
-		get_tree().change_scene_to_file("res://e.tscn")
+		get_tree().change_scene_to_file("res://level.tscn")
 	elif menu_index == 1:
 		get_tree().change_scene_to_file("res://options.tscn")
 	elif menu_index == 2:

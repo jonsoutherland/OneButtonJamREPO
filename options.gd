@@ -98,7 +98,7 @@ func _updateSetting():
 	
 	time_held = 0
 	
-func _setUp():
+func _setUp(): 
 	if music_enabled:
 		$Settings/MusicEnabled.text = "Music: Enabled"
 	else:

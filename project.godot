@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 MusicController="*res://MusicController.tscn"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 ui_accept={

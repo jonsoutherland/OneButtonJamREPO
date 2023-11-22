@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://vnt5355mgfay"]
+[gd_scene load_steps=9 format=3 uid="uid://vnt5355mgfay"]
 
 [ext_resource type="Script" path="res://Player control.gd" id="1_50cqn"]
 [ext_resource type="Texture2D" uid="uid://d0h5bhj1w0w74" path="res://images/background placeholder.jpg" id="1_sd6oh"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c4vsim2c5q3j4" path="res://images/table placeholder.jpg" id="2_s2b4f"]
 [ext_resource type="Texture2D" uid="uid://be7xel2rfnk1u" path="res://images/arm placeholder.png" id="2_tt7bm"]
 [ext_resource type="Script" path="res://Enemy.gd" id="3_sxihx"]
+[ext_resource type="Texture2D" uid="uid://bu2c00we7w73p" path="res://images/drink placeholder.png" id="6_3xlgr"]
 
 [node name="Level" type="Node2D"]
 
@@ -29,6 +30,12 @@ expand_mode = 2
 stretch_mode = 3
 script = ExtResource("2_ot6xt")
 
+[node name="Enemy" type="Sprite2D" parent="Player control"]
+position = Vector2(-274, 281)
+scale = Vector2(1, 1.47732)
+texture = ExtResource("2_b2uam")
+script = ExtResource("3_sxihx")
+
 [node name="Table" type="Sprite2D" parent="Player control"]
 modulate = Color(0.321569, 0.207843, 0.0392157, 1)
 position = Vector2(619, 621)
@@ -41,8 +48,7 @@ position = Vector2(240, 402)
 scale = Vector2(1, 1.47732)
 texture = ExtResource("2_tt7bm")
 
-[node name="Enemy" type="Sprite2D" parent="."]
-position = Vector2(-274, 281)
+[node name="Drink" type="Sprite2D" parent="Player control"]
+position = Vector2(297, 357)
 scale = Vector2(1, 1.47732)
-texture = ExtResource("2_b2uam")
-script = ExtResource("3_sxihx")
+texture = ExtResource("6_3xlgr")

@@ -1,13 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://vnt5355mgfay"]
+[gd_scene load_steps=11 format=3 uid="uid://vnt5355mgfay"]
 
 [ext_resource type="Script" path="res://Player control.gd" id="1_50cqn"]
-[ext_resource type="Texture2D" uid="uid://d0h5bhj1w0w74" path="res://images/background placeholder.jpg" id="1_sd6oh"]
 [ext_resource type="Texture2D" uid="uid://22wiwv3mumio" path="res://images/enemy placeholder.png" id="2_b2uam"]
 [ext_resource type="Script" path="res://Background.gd" id="2_ot6xt"]
+[ext_resource type="Texture2D" uid="uid://t886wr8fpaec" path="res://images/background.png" id="2_pwm2a"]
 [ext_resource type="Texture2D" uid="uid://c4vsim2c5q3j4" path="res://images/table placeholder.jpg" id="2_s2b4f"]
-[ext_resource type="Texture2D" uid="uid://be7xel2rfnk1u" path="res://images/arm placeholder.png" id="2_tt7bm"]
 [ext_resource type="Script" path="res://Enemy.gd" id="3_sxihx"]
-[ext_resource type="Texture2D" uid="uid://bu2c00we7w73p" path="res://images/drink placeholder.png" id="6_3xlgr"]
+[ext_resource type="Texture2D" uid="uid://corqceioytj5x" path="res://images/hand.png" id="7_kvnjc"]
+[ext_resource type="Texture2D" uid="uid://cuhbc6o50ok88" path="res://images/drink.png" id="8_rq4e1"]
+[ext_resource type="FontFile" uid="uid://ciynf0kgqo7w" path="res://fonts/PixeloidSans-mLxMm.ttf" id="9_jmkb2"]
+[ext_resource type="Texture2D" uid="uid://bvbapjgihnk7m" path="res://images/bar.png" id="10_njjg2"]
 
 [node name="Level" type="Node2D"]
 
@@ -20,12 +22,12 @@ script = ExtResource("1_50cqn")
 
 [node name="Background" type="TextureRect" parent="Player control"]
 layout_mode = 0
-offset_left = -238.0
-offset_top = -168.0
-offset_right = 402.0
-offset_bottom = 192.0
-scale = Vector2(2.61318, 2.71752)
-texture = ExtResource("1_sd6oh")
+offset_left = -8.0
+offset_top = -5.0
+offset_right = 632.0
+offset_bottom = 355.0
+scale = Vector2(1.82473, 1.59488)
+texture = ExtResource("2_pwm2a")
 expand_mode = 2
 stretch_mode = 3
 script = ExtResource("2_ot6xt")
@@ -46,9 +48,29 @@ texture = ExtResource("2_s2b4f")
 [node name="Hand" type="Sprite2D" parent="Player control"]
 position = Vector2(240, 402)
 scale = Vector2(1, 1.47732)
-texture = ExtResource("2_tt7bm")
+texture = ExtResource("7_kvnjc")
 
 [node name="Drink" type="Sprite2D" parent="Player control"]
 position = Vector2(297, 357)
 scale = Vector2(1, 1.47732)
-texture = ExtResource("6_3xlgr")
+texture = ExtResource("8_rq4e1")
+
+[node name="Label" type="Label" parent="Player control"]
+layout_mode = 2
+offset_left = 554.0
+offset_top = 534.0
+offset_right = 824.0
+offset_bottom = 586.0
+theme_override_fonts/font = ExtResource("9_jmkb2")
+theme_override_font_sizes/font_size = 40
+text = "Intoxication:"
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Player control"]
+layout_mode = 2
+offset_left = 842.0
+offset_top = 553.0
+offset_right = 1042.0
+offset_bottom = 753.0
+scale = Vector2(1.42636, 0.106125)
+max_value = 10000.0
+texture_progress = ExtResource("10_njjg2")

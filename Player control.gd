@@ -9,6 +9,7 @@ var index = 0 # creates index variable for above array
 var time_held = 0 # records how long the space key is held down
 var requierd_hold_time = 1 # set this number to change how long the user needs to hold the input
 var restart = true
+var won_level = false
 
 
 # Called when the node enters the scene tree for the first time.
@@ -29,11 +30,11 @@ func _process(delta):
 		intoxication = $TextureProgressBar.value
 		player_is_drinking = Input.is_action_pressed("Iterate")
 		if player_is_drinking and enemy_is_ready:
-			$TextureProgressBar.value += 2
+			$TextureProgressBar.value += 2 * randf_range(.5,2)
 			$Hand.set_visible(false)
 			$Drink.set_visible(true)
 		else:
-			$TextureProgressBar.value -= 1
+			$TextureProgressBar.value -= 1 * randf_range(.01,1)
 			$Hand.set_visible(true)
 			$Drink.set_visible(false)
 		
